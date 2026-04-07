@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const API = "http://localhost:3001/api";
+const API = "https://habit-tracker-ojbw.onrender.com/api";
 
 const COLORS = ["#1D9E75", "#D85A30", "#378ADD", "#D4537E", "#BA7517", "#534AB7"];
 
