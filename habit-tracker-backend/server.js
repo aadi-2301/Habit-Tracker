@@ -19,10 +19,6 @@ const db = mysql.createPool({
   queueLimit: 0
 });
 
-db.connect(err => {
-  if (err) { console.error('MySQL connection failed:', err.message); process.exit(1); }
-  console.log('✅ MySQL connected to habit_tracker');
-});
 
 // AUTH
 app.post('/api/register', async (req, res) => {
