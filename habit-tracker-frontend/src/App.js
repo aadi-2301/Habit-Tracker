@@ -44,9 +44,13 @@ export default function HabitTracker() {
     if (saved) { setUser(JSON.parse(saved)); setPage("dashboard"); }
   }, []);
 
-  useEffect(() => {
-    if (user) { fetchHabits(); fetchGoals(); }
-  }, [user]);
+ useEffect(() => {
+  if (user) {
+    fetchHabits();
+    fetchGoals();
+  }
+  // eslint-disable-next-line
+}, [user]);
 
   async function fetchHabits() {
     try {
